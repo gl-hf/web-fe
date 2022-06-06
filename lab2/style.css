@@ -1,0 +1,17 @@
+.first {
+  background-color: #578f8f;
+
+}
+
+.second {
+  background-color: #f5f555;
+
+}
+
+td {
+  color: #0A0794;
+}
+
+td:hover{
+  background-color: green;
+}
