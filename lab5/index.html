@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Снігур А.В. ІА-94</title>
+   <meta name="description" content="Labs">
+   <meta name="keywords" content="HTML, CSS, JavaScript">
+ </head>
+ <body>
+  <h2>Снігур Андрій Валерійович</h2>
+  <h4>Місце народження:5 липня, 2001 року, м.Київ</h4>
+  <h4>НТУУ КПІ, м.Київ</h4>
+  <h4 id="h4">Хоббі: </h4>
+  <ul id="ul">
+  <li>Музика</li>
+  <li>Туризм</li>
+  <li>Спорт</li>
+  </ul>
+  <h4>Улюблені фільми:</h4>
+  <ol id="ol">
+    <li>"Зелена миля"</li>
+    <li>"Планета Ка-Пекс"</li>
+    <li>"Дванадцять мавп"</li>
+  </ol>
+  <p>Валенсія - адміністративний центр автономної спільноти Валенсія та однойменної провінції Іспанії. Третє за кількістю жителів місто Іспанії після Мадриду і Барселони. Площа муніципалітету — 134,6 км2. Відстань від Валенсії до Барселони та до Мадриду становить близько 350 км. Населення міста становить близько 814,2 тис. осіб, що становить 18 % усього населення автономної спільноти Валенсія. Офіційними мовами, що використовуються у державних установах, є валенсійська (тобто каталанська) та іспанська.</p>
+  <div id="screen">
+  <img src="Valencia6.jpeg" height="300" id="image">
+</div>
+<button id="but1">Додати</button>
+<button id="but2">Збільшити</button>
+<button id="but3">Зменшити</button>
+<button id="but4">Видалити</button>
+<script>
+  but1.onclick = function () {
+    let photo = document.createElement("img");
+    photo.src = "http://ourspain.ru/images/cities/valencia1.jpg";
+
+    let div1 = document.createElement('div');
+    div1.append(photo);
+    document.body.append(div1)
+}
+
+  but2.onclick = function () {
+     var img = document.getElementById('image');
+     img.style.height = '500px';
+     img.style.width= '500px';
+  }
+
+  but3.onclick = function () {
+     var img = document.getElementById('image');
+     img.style.height = '100px';
+     img.style.width= '100px';
+  }
+
+  but4.onclick = function () {
+    var img = document.getElementById('screen');
+    img.innerHTML = "";
+}
+</script>
+
+
+
+  <script>
+  var h = document.getElementById('h4');
+  var ul = document.querySelectorAll('ul')[0];
+  var ol = document.getElementById('ol');
+
+  h.addEventListener("click", function(){
+    this.style.color = (this.style.color == 'black') ? 'white' : 'black';
+    if(this.style.backgroundColor == '')
+      this.style.backgroundColor = 'yellow';
+        this.style.backgroundColor = (this.style.backgroundColor == 'yellow') ? 'green' : 'yellow';
+  })
+
+  ul.addEventListener("click", function(){
+    this.style.color = (this.style.color == 'black') ? 'white' : 'black';
+    if(this.style.backgroundColor == '')
+      this.style.backgroundColor = 'yellow';
+        this.style.backgroundColor = (this.style.backgroundColor == 'yellow') ? 'pink' : 'yellow';
+  })
+
+  ol.addEventListener("click", function(){
+    if(this.style.color == '')
+      this.style.backgroundColor = 'white';
+        this.style.color = (this.style.color == 'white') ? 'blue' : 'white';
+    if(this.style.backgroundColor == '')
+      this.style.backgroundColor = 'green';
+        this.style.backgroundColor = (this.style.backgroundColor == 'green') ? 'red' : 'green';
+  })
+  </script>
+ </body>
+
+</html>
