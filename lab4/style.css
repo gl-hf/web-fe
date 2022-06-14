@@ -1,0 +1,214 @@
+body{
+  background-color: white	;
+}
+
+.wrapper{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  right: 10%;
+}
+
+.call_us{
+  position: absolute;
+  right: 25%;
+}
+
+.nav{
+  display: flex;
+  list-style-type: none;
+  font-weight: 1000;
+  text-transform: capitalize;
+}
+
+.learn {
+  padding-right: 15%;
+}
+
+.ends_tom{
+  padding-left: 15%;
+}
+
+.nav>li{
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.timer{
+  color:#32CD32;
+  font-size:16px;
+  text-align:center;
+}
+
+.nav>li>p {
+  text-decoration: none;
+  color: black;
+  font-size: 14px
+}
+
+.navigation {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.nav2{
+  display: flex;
+  list-style-type: none;
+  padding-left: 10;
+  font-weight: 1000;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+.nav2>li{
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.nav2>li>a:hover{
+  color: black;
+}
+
+.nav2>li>a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px
+}
+
+.navigation2 {
+  background-color: #F5FFFA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.page1 {
+  background-image: url(student.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding-top: 260px;
+  padding-bottom: 285px;
+}
+
+.text_page1 {
+  margin-left: 10%;
+}
+
+.btn{
+  color: white;
+  background-color: #32CD32;
+  width: 150px;
+  height: 50px;
+}
+
+.page2{
+    background-color: #FFEFD5;
+    width: 100%;
+    height: 100%;
+}
+
+.teacher_logo {
+  padding-left: 6%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  float: left;
+}
+
+.page2_txt{
+  position:relative;
+  padding-left: 53%;
+  padding-top: 5%;
+}
+
+.page3 {
+  text-align: center;
+}
+
+.wrapper>h1 {
+  text-align: center;
+
+  font-style: italic;
+}
+
+.wrapper>h2 {
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 530px;
+  height: 430px;
+  margin-top: 10px;
+  border: solid 1px;
+  border-color: grey;\
+  line-height: 25px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.page4{
+  background-color: #E0FFFF;
+}
+.teacher4{
+  float: right;
+}
+
+.flex-item1{
+  background: #E0FFFF;
+  padding: 5px;
+  width: 700px;
+  height: 80px;
+  margin-top: 10px;
+  border: solid 1px;
+  border-color: grey;
+  line-height: 25px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  list-style: none;
+}
+
+.button5{
+  position: absolute;
+  background-color: #E0FFFF;
+  border: solid;
+  border-color: #4CAF50;
+  color: #4CAF50;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
